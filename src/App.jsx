@@ -9,7 +9,7 @@ function App() {
   function searchImage(e){
     e.preventDefault()
     if(!word){
-       alert("กรุณาป้อนชื่อรูปภาพ")
+       alert("Search")
     }else{
         fetchImageFromAPI()
     }
@@ -21,7 +21,7 @@ function App() {
       const data = await res.json()
       const result = data.results
       if(result.length==0){
-         alert("ไม่มีข้อมูลรูปภาพ")
+         alert("Not Found")
          setWord("")
       }else{
           setPhotos(result)
@@ -29,14 +29,14 @@ function App() {
   }
   return (
     <>
-      <h1>ระบบค้นหารูปภาพด้วย API</h1>
+      <h1>Search image API</h1>
       <form onSubmit={searchImage}>
           <input type="text" 
-            placeholder='ป้อนชื่อรูปภาพที่ต้องการค้นหา'
+            placeholder='type...'
             value={word}
             onChange={(e)=>setWord(e.target.value)}
           />
-          <button type='submit'>ค้นหา</button>
+          <button type='submit'>search</button>
       </form>
       <div className='search-result'>
           {photos.map((data,index)=>{
