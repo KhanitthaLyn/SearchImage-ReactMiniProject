@@ -29,7 +29,7 @@ function App() {
   }
   return (
     <>
-      <h1>Search image API</h1>
+      <h1>Search Image API</h1>
       <form onSubmit={searchImage}>
           <input type="text" 
             placeholder='type...'

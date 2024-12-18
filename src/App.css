@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #15202b;
+    background: #78a5d3;
     color: white;
 }
 h1{
@@ -19,9 +19,9 @@ form{
     height: 80px;
     display: flex;
     align-items: center;
-    background: #434989;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    background: #555db8;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 input{
     flex: 1;
@@ -30,7 +30,7 @@ input{
     outline: 0;
     font-size: 18px;
     padding: 0 20px;
-    border-radius: 8px;
+    border-radius: 10px;
     background: transparent;
     color: white;
 }
